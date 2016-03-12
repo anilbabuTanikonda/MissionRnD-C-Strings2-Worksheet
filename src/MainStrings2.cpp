@@ -11,12 +11,18 @@ Objectives of C-Strings-2 Lesson:
 
 */
 
-
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+#include "FunctionHeadersStrings2.h"
 int main(){
 
-
-	//Test Consonants_Vowels
-
+	char str[] = "abcdefgh.,812639";
+	int i = 0;
+	int j = 2;
+	char *new_str = get_sub_string(str, i, j);
+	puts(new_str);
+	getch();
 	//Test getFrequencyofWord
 
 	//Test getSubstring
